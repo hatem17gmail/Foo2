@@ -1,0 +1,6 @@
+disconnect from connected repo (github)
+>git remote remove origin
+connect to an another github 
+>git remote add https://github.com/etc/etc/etc
+Test connection 
+>git remote -v
