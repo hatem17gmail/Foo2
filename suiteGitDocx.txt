@@ -4,3 +4,36 @@ connect to an another github
 >git remote add https://github.com/etc/etc/etc
 Test connection 
 >git remote -v
+If github repo contains files and local contains files, so to pull the github repo and save the local repo w ithout error
+>git pull remote origin --allow--unrelated-histories
+clone from a github repository (get a folder contain .git and readMe file)
+>git clone https://github.com/hatem17gmail/Foo3.git
+-----------------------------------------------------------
+----------use git with visual studio-----------------------
+-----------------------------------------------------------
+1/add github extension to visual studio (vs)
+2/create a repository in your computer
+3/connect to your github account and create a new repo in your github (clic to create and continue...)
+
+** if creating a local repo and an github repo from visual studio
+To create a solution(project) in this repo :
+1/clic to the github repo
+2/ clic on new solution and create a new project
+3/Team Explorer --> changes (cloc) ==>write cmntr and clic on commit all or commit staged
+other way  ==> we can alos commit with clic on file in stashes --> stage file ===> the file will be in changes.
+
+** to get this up into github, de la menu de github clic on Sync (fleches) ==>clic to push
+** modify code from github, then from vs we can merge:
+clic on branches =>choose the branche ==> merge(origin/master) => click on merge
+**also we can use pull ( fetch + merge): sync-->pull
+
+** modify code from vs then commit code and push it on git:
+1/ clic on changes, and commit work with cmntr(this commit will be in the local repository)
+2/clic on synch then clic on push to get up work on git hub
+*******************************31:14******************************************************
+master is the main braches ==> the other braches presents features
+to create a brache: go to branches => right clic master brache ==> add new branches==> write brache's name
+** commites are in the feature..
+**after working in a branche you can merge your work to master branche===> it is the PULL REQUEST
+PULL REQUEST: clic on PULL REQUEST--> clic on create new the.....ok
+** from github ==> pull request==>merge ==>(code in branche will be merge in master)
